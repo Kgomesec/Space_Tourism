@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --blue-300: #D0D6F9;
+    --blue-900: #0B0D17;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100dvh;
+    background-image: url("../home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    color: var(--white);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .end-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 5rem;
+    margin-top: 2.5rem;
+}
+
+.header .end-items .logo {
+    margin: 0 2rem 0 3rem;
+}
+
+.header .end-items .nav-bar {
+    display: flex;
+    gap: 2.5rem;
+    list-style-type: none;
+    background-color: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(15px);
+    align-items: center;
+    height: 100%;
+    padding: 0 4rem 0 8rem;
+}
+
+.header .end-items hr {
+    border: none;
+    border-top: 1px solid #979797;
+    margin: 10px 0;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+    left: 1.5rem;
+}
+
+.header .end-items .nav-bar li {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header .end-items .nav-bar li .links {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.texts {
+    width: 540px;
+}
+
+.texts .subtitle {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4px;
+    color: var(--blue-300);
+}
+
+.texts .title {
+    font-family: "Bellefair", sans-serif;
+    font-size: 144px;
+}
+
+.texts .description {
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    line-height: 180%;
+    color: var(--blue-300);
+}
+
+.button .Explore_button {
+    display: flex;
+    justify-content: end;
+}
+
+.button .Explore_button button {
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+    width: 272px;
+    height: 272px;
+    border-radius: 50%;
+    border: none;
+}
+
+.container {
+    display: flex;
+    height: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .center_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .center_container .center_content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
